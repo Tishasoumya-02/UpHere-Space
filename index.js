@@ -21,7 +21,7 @@ app.get("/",function(req,res)
 {
     res.sendFile(__dirname+ "/index.html");
 });
-const myAPI_KEY=(process.env.API_KEY);
+const myAPI_KEY=(process.env.MY_API_KEY);
 const url="https://api.nasa.gov/planetary/apod?api_key=";
 const curl=url+myAPI_KEY;
 
