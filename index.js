@@ -22,14 +22,14 @@ app.get("/",function(req,res)
     res.sendFile(__dirname+ "/index.html");
 });
 const myAPI_KEY=(process.env.API_KEY);
-const url="https://api.nasa.gov/planetary/apod?api_key=https://api.nasa.gov/planetary/apod?api_key=jWrxd1xFxt2ZP8ETCowEb2bT5Gryr0RJPkcWVXUL";
+
 
 
 app.get("/addendum", function(req,res)
 {
    
 
-       fetch(url)
+       fetch("https://api.nasa.gov/planetary/apod?api_key=https://api.nasa.gov/planetary/apod?api_key=jWrxd1xFxt2ZP8ETCowEb2bT5Gryr0RJPkcWVXUL")
       .then(response=>response.json())
       .then(data=>{ 
         res.render("index3",{info : {
