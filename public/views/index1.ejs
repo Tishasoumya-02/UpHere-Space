@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link rel="icon" href="/Images/favicon.ico" type="image/gif" sizes="16x16">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <title>Recent FireBall Event's</title>
+</head>
+<body>
+  
+    <table class="table table-dark table-striped table-bordered table-hover table-responsive-md">
+        <thead class="thead-dark">
+          <tr class="table-dark">
+            <th scope="col">Serial No.</th>
+            <th scope="col">Date</th>
+            <th scope="col">Energy</th>
+            <th scope="col">Latitude</th>
+            <th scope="col">Latitude Direction</th>
+            <th scope="col">Longitude</th>
+            <th scope="col">Longitude Direction</th>
+            <th scope="col">Velocity(km/s)</th>
+
+          </tr>
+        </thead>
+           <tbody>
+            <% for (var i = 0; i < set.length; i++) { %>
+              <tr >
+                <td align="center" scope="row"><%=(i+1)%>.</td>
+                <td><%= set[i][0] %></td>
+                <td><%=set[i][1] %></td>
+                <td><%= set[i][3] %></td>
+                <td><%= set[i][4] %></td>
+                <td><%= set[i][5] %></td>
+                <td><%= set[i][6] %></td>
+                <td><%= set[i][8] %></td>
+                
+              </tr>    
+             <% } %>
+           </tbody> 
+          
+       </table>
+    
+</body>
+</html>

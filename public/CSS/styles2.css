@@ -1,0 +1,33 @@
+body
+{
+    background-image: url('/Images/background1.webp');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+    
+/* background-color: #81DFE8; */
+}
+#title
+{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+.card
+{
+    margin-top: 5.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card-header
+{
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+}
+.card-body
+{
+    font-family: 'Inconsolata', monospace;
+}
