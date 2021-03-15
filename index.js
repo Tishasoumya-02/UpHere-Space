@@ -13,7 +13,10 @@ const  port=process.env.PORT || 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
-app.set('view engine','ejs');
+
+ app.set('view engine','ejs');
+ app.set('views', 'public/views');
+
 app.get("/",function(req,res)
 {
     res.sendFile(__dirname+ "/index.html");
@@ -32,7 +35,7 @@ app.get("/addendum", function(req,res)
         
        
         
-        res.render('C:/Users/HP/desktop/upspace1/public/views/index',{info : {
+        res.render("index",{info : {
             body: data.explanation,
             imgurl : data.url, 
             heading: data.title,
@@ -68,7 +71,7 @@ app.get("/celestial/fireball",function(req,res)
            {
               data1.push(data.data[i]);
            }
-           res.render('C:/Users/HP/desktop/upspace1/public/views/index1',{set :data1});
+           res.render("index1",{set :data1});
            
     }).catch(error=>{
         console.log(error);
@@ -87,7 +90,7 @@ app.get("/celestial/cad",function(req,res)
            {
               data1.push(data.data[i]);
            }
-           res.render('C:/Users/HP/desktop/upspace1/public/views/index2',{set :data1});
+           res.render("index2",{set :data1});
            
     }).catch(error=>{
         console.log(error);
