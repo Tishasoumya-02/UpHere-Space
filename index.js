@@ -6,7 +6,7 @@ const fetch=require("node-fetch");
 require('dotenv').config();
 const response = require("express");
 const app=express();
-app.disable('etag');
+
  
 const  port=process.env.PORT || 3000;
  
@@ -29,7 +29,7 @@ app.get("/addendum", function(req,res)
 {
    
 
-       fetch(curl)
+       fetch("https://api.nasa.gov/planetary/apod?api_key=jWrxd1xFxt2ZP8ETCowEb2bT5Gryr0RJPkcWVXUL")
       .then(response=>response.json())
       .then(data=>{ 
         res.render("index3",{info : {
