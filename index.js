@@ -35,7 +35,7 @@ app.get("/addendum", function(req,res)
         
        
         
-        res.render("index",{info : {
+        res.render("index3",{info : {
             body: data.explanation,
             imgurl : data.url, 
             heading: data.title,
