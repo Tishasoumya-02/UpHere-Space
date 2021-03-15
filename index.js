@@ -6,7 +6,7 @@ const fetch=require("node-fetch");
 require('dotenv').config();
 const response = require("express");
 const app=express();
-
+app.disable('etag');
  
 const  port=process.env.PORT || 3000;
  
@@ -31,10 +31,7 @@ app.get("/addendum", function(req,res)
 
        fetch(curl)
       .then(response=>response.json())
-      .then(data=>{
-        
-       
-        
+      .then(data=>{ 
         res.render("index3",{info : {
             body: data.explanation,
             imgurl : data.url, 
