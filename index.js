@@ -139,7 +139,7 @@ app.get("/random", function(req,res)
           console.log(error);
       });
    
-   
+  
 });
 app.get("/celestial",function(req,res)
 {
