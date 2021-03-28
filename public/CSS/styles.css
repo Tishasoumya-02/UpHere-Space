@@ -1,7 +1,31 @@
-
 body
 {
   background: none;
+}
+.fa-rocket
+{
+  background: linear-gradient(34deg,  #ffff00, #ff00cf, orange, #ff005a,wheat);
+  background-size: 1200% 1200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: animate 7s ease infinite;
+  -moz-animation: animate 7s ease infinite;
+  animation: animate 7s ease infinite;
+}
+@-webkit-keyframes animate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes animate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes animate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 #title
 {

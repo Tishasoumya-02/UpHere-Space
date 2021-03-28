@@ -25,6 +25,14 @@ const myAPI_KEY=(process.env.MY_API_KEY);
 const url="https://api.nasa.gov/planetary/apod?api_key=";
 const curl=url+myAPI_KEY;
 
+app.get("/gallery",function(req,res)
+{
+
+
+    res.render("index4");
+
+    });
+
 app.get("/addendum", function(req,res)
 {
    
@@ -170,6 +178,7 @@ app.get("/celestial/fireball",function(req,res)
 
 
 });
+
 app.get("/celestial/cad",function(req,res)
 {
     var i;
