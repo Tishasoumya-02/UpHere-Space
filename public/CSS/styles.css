@@ -1,6 +1,12 @@
-body
+.logo
 {
-  background: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ scroll-behavior: smooth;
+  width: 30%;
+  height: 30%;
 }
 .fa-rocket
 {
