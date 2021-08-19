@@ -1,73 +1,106 @@
-body
-{
-    background-image: url("/Images/gallerybg.webp");
+body::-webkit-scrollbar {
+  width: 1em;
 }
-.heading 
-{
-  
-    text-align: center;
-    font-style: cursive;
-    font-family:"Kaushan Script";
-    font-weight: bolder;
-    font-size: xxx-large;
-    margin:60px 0px ;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #f05454;
-    background: linear-gradient(34deg, #ff0000, #ffff00, #ff00cf, #1800ff, #ff005a, #ff000e);
-    background-size: 1200% 1200%;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation: animate 7s ease infinite;
-    -moz-animation: animate 7s ease infinite;
-    animation: animate 7s ease infinite;
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c47f06;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+body {
+  background-image: url("/Images/gallerybg.webp");
+}
+.heading {
+  text-align: center;
+  font-style: cursive;
+  font-family: "Kaushan Script";
+  font-weight: bolder;
+  font-size: xxx-large;
+  margin: 60px 0px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f05454;
+  background: linear-gradient(
+    34deg,
+    #ff0000,
+    #ffff00,
+    #ff00cf,
+    #1800ff,
+    #ff005a,
+    #ff000e
+  );
+  background-size: 1200% 1200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: animate 7s ease infinite;
+  -moz-animation: animate 7s ease infinite;
+  animation: animate 7s ease infinite;
 }
 
 @-webkit-keyframes animate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes animate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes animate {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.anchor
-{
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:wheat;
-    font-size: large;
-    font-weight: 200;
-    
-    font-family: 'Oxygen', sans-serif;
-}
-.anchor:hover{
-    color: wheat
-    
-}
-.card
-{
-    margin: 10px;
-    border: 2px solid #fad586;
-    border-radius: 10px;
-    padding: 2%;
-   
-}
-.card:hover
-{
-    border:4px solid #ec524b ;
-    background: linear-gradient(281deg,#290001,#290001);
+.anchor {
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: wheat;
+  font-size: large;
+  font-weight: 200;
 
+  font-family: "Oxygen", sans-serif;
+}
+.anchor:hover {
+  color: wheat;
+}
+.card {
+  margin: 10px;
+  border: 2px solid #fad586;
+  border-radius: 10px;
+  padding: 2%;
+}
+.card:hover {
+  border: 4px solid #ec524b;
+  background: linear-gradient(281deg, #290001, #290001);
 }
 
-.card-body:hover{
-    text-decoration: underline;
-   
-
+.card-body:hover {
+  text-decoration: underline;
 }

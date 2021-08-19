@@ -1,16 +1,14 @@
-.logo
-{
+.logo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
   width: 30%;
   height: 30%;
 }
-.fa-rocket
-{
-  background: linear-gradient(34deg,  #ffff00, #ff00cf, orange, #ff005a,wheat);
+.fa-rocket {
+  background: linear-gradient(34deg, #ffff00, #ff00cf, orange, #ff005a, wheat);
   background-size: 1200% 1200%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -19,23 +17,40 @@
   animation: animate 7s ease infinite;
 }
 @-webkit-keyframes animate {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes animate {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes animate {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-#title
-{
-  font-family: 'Orbitron', sans-serif;
+#title {
+  font-family: "Orbitron", sans-serif;
 }
 
 .text-block {
@@ -43,113 +58,90 @@
   bottom: 200px;
   left: 20px;
   right: 20px;
- 
+
   color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
-#righttext
-{
-  position:absolute;
+#righttext {
+  position: absolute;
   bottom: 100px;
-  right:200px;
-  left:100px;
+  right: 200px;
+  left: 100px;
 }
-#righttext2
-{
-  
-  position:absolute;
-  top:150%;
-  right:200px;
-  left:100px;
-
+#righttext2 {
+  position: absolute;
+  top: 150%;
+  right: 200px;
+  left: 100px;
 }
-.container-fluid
-{
+.container-fluid {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: large;
 }
-#type
-{
+#type {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  
-  
-
 }
-#static
-{
+#static {
   text-align: center;
   position: absolute;
   margin-left: auto;
   bottom: 55%;
   color: wheat;
 }
-.typing  
-{
- 
+.typing {
   position: absolute;
-  padding:0%;
+  padding: 0%;
   margin-top: 0%;
   bottom: 44%;
-    color:#da723c;
-  
+  color: #da723c;
 }
-.typing::after
-{
+.typing::after {
   content: "";
-  position:absolute;
-  right:-5px;
+  position: absolute;
+  right: -5px;
   width: 1px;
   height: 60%;
   bottom: 10%;
   border-right: 2px solid #da723c;
   animation: blink 0.3s infinite ease;
 }
-#information
-{
+#information {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-.info
-{
-  
-  color:#ffd5cd;
+.info {
+  color: #ffd5cd;
   font-size: x-large;
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   position: absolute;
-  
-  bottom: 29%;
 
+  bottom: 29%;
 }
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  
+
   color: white;
   text-align: center;
 }
 
-@keyframes blink
-{
-  0%
-  {
+@keyframes blink {
+  0% {
     opacity: 0;
-
   }
-  100%
-  {
+  100% {
     opacity: 1;
   }
 }
-

@@ -1,33 +1,43 @@
-body
-{
-    background-image: url('/Images/background1.webp');
-    background-size: cover;
-    
-    
-    
-    height: 100vh;
-    padding:0;
-    margin:0;
-    
-/* background-color: #81DFE8; */
+body::-webkit-scrollbar {
+  width: 1em;
 }
-#title
-{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
-.card
-{
-    margin-top: 5.5%;
-    margin-left: 10%;
-    margin-right: 10%;
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c47f06;
+  border-radius: 10px;
 }
-.card-header
-{
-    font-family: 'Dosis', sans-serif;
-    font-size: larger;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
 }
-.card-body
-{
-    font-family: 'Inconsolata', monospace;
+body {
+  background-image: url("/Images/background1.webp");
+  background-size: cover;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  /* background-color: #81DFE8; */
+}
+#title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+}
+.card {
+  margin-top: 5.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.card-header {
+  font-family: "Dosis", sans-serif;
+  font-size: larger;
+}
+.card-body {
+  font-family: "Inconsolata", monospace;
 }
