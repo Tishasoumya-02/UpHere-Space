@@ -1,5 +1,5 @@
 <html>
-  <head> 
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <link rel="icon" href="/Images/favicon.ico" type="image/gif" sizes="16x16">
-</head> 
+</head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">  
+        <div class="container-fluid">
     <div class="card">
         <div class="card-header" style="font-family: 'Kaushan Script', cursive;"><h3>Astronomy Picture Of the Day</h3>  <ul class="pager" style="padding-left: 14%; padding-right: 14%;">
           <li class=" text-center" ><a href="\previous"><span class="text"> Previous Day's APOD</span></a></li>
@@ -21,28 +21,39 @@
           <li class=" text-center" ><a href="\addendum"><span class="text"> Today's APOD</span> </a></li>
 </div>
         <div class="bg-image hover-overlay ripple  " data-mdb-ripple-color="light">
-         
-        
-          <img
-            src="<%= info.imgurl %>" alt="<%=info.imgurl %>" class="rounded mx-auto d-block" width="90%" height="500px"
-          />
+
+
+
+
+
+
+<% if (info.type==="image") { %>
+  <img
+    src="<%= info.imgurl %>" alt="<%=info.imgurl %>" class="rounded mx-auto d-block" width="90%" height="500px"
+  />
+<%}else{ %>
+  <iframe width="90%" height="500px" class="rounded mx-auto d-block"  src="<%=info.imgurl%>" frameborder="0"
+  allowfullscreen></iframe>
+<% } %>
+
+
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          
+
         </div>
         <div class="card-body">
           <h3 class="card-title" style="font-family: 'Akaya Kanadaka', cursive;"><%= info.heading %></h5>
           <p class="card-text">
             <%= info.body %>
-          </p> 
+          </p>
         </div>
         <div class="card-footer text-muted text-center"><%= info.date %></div>
-        
-          
+
+
         </ul>
       </div>
       </div>
-      
-      
+
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
